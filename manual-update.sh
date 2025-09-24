@@ -429,7 +429,7 @@ for i in "${themes[@]}"; do
   # replace Quartz is a fast with [${i}](https://github.com/quartz-themes/${i})\n\nQuartz is a fast, in `docs/index.md`
   # sed -i -e 's|Quartz is a fast|[Quartz Themes on GitHub](https://github.com/saberzero1/quartz-themes/tree/master/themes/'${i}').\n\nQuartz is a fast|' docs/index.md
 
-  # git commit -a -m "Updated theme to latest template."
+  git commit -a -m "Applied overrides to template."
 
   git push || git push --force
   # git push
